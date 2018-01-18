@@ -1,0 +1,426 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+.content {
+    width: 1040px;
+    margin: 0 auto;
+}
+.block-header {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+}
+.clear {
+    clear: both;
+}
+.h50 {
+    height: 50px;
+}
+header {
+    background: white;
+    /*height: 107px;*/
+    color: #ec3924;
+    padding: 15px 0;
+}
+#headerContent #logoBlock img{
+    /*position: relative;*/
+    /*left: -20px;*/
+}
+#headerContent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#headerContent .contact img{
+    float: left;
+    position: relative;
+    left: 90px;
+}
+#headerContent div p{
+    font-size: 19px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+#headerContent .number {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+}
+#headerContent a .mail{
+    font-size: 15px;
+    color: #ec3924;
+    text-align: right;
+    text-transform: uppercase;
+}
+#headerContent a {
+    text-decoration: none;
+}
+
+#mainWrapper {
+    height: 495px;
+    background-size: cover;
+    background: url("../img/mainbg.jpg") center center;
+    border-bottom: 10px solid #86bc56;
+}
+#triangle {
+    display: block;
+    margin: 0 auto;
+}
+#mainContent {
+    color: white;
+}
+#mainContent h1 {
+    text-align: center;
+    padding-top: 35px;
+    font-size: 30px;
+
+}
+#mainContent h2 {
+    text-align: center;
+    font-size: 19px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+}
+#mainContent #mainAdvantages {
+    margin-top: 112px;
+}
+#mainContent #mainAdvantages .advantage .adv-icon {
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background: no-repeat center center;
+    display: inline-block;
+}
+#mainContent #mainAdvantages .advantage p {
+    display: inline-block;
+    position: relative;
+    top: -20px;
+    left: 10px;
+}
+
+#catalogWrapper {
+    background-color: #f0f0f0;
+    margin-top: -20px;
+    padding-bottom:50px;
+}
+#catalogWrapper h1 {
+    padding-top: 80px;
+}
+#catalogContent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 18px;
+}
+#catalogContent div{
+    background-color: #fff;
+}
+#catalogContent div h3 {
+    color: #86bc56;
+    border-bottom: 2px solid #86bc56;
+    margin: 10px;
+    font-size: 18px;
+    padding-bottom: 12px;
+    height: 66px;
+}
+#catalogContent div .img-block {
+    text-align: center;
+}
+.img-block {
+    margin-bottom: 15px;
+}
+.img-block img {
+    max-height: 128px;
+    max-width: 334px;
+}
+.tags {
+    padding: 10px;
+    margin: 10px 0;
+    margin-top: 20px;
+    height: 76px;
+}
+.tags .tag {
+    padding: 5px;
+    border: 2px dashed black;
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 10px;
+
+}
+#catalogContent div button {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff;
+    background-color: #86bc56;
+    padding: 15px 0;
+    width: 100%;
+    border: 0;
+}
+#catalogContent div button:hover {
+    cursor: pointer;
+    background-color: #ec3924;
+}
+#catalogHeader {
+    margin-bottom: 70px;
+}
+#ownProductionWrapper {
+
+}
+#ownProductionTitle {
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 35px 0;
+}
+#ownProductionIcons {
+    background-color: #86bc56;
+    padding: 25px 0;
+}
+#ownProductionGrid {
+    width: 684px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+#ownProductionGrid div {
+    text-align: center;
+    color: white;
+}
+#ownProductionGrid div img{
+    height: 89px;
+}
+#ownProductionGrid div h3 {
+    font-weight: normal;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+
+/*SLIDER ENV STYLES*/
+#sliderWrapper {
+    padding: 37px 0;
+    background: url("../img/sliderbg.jpg") no-repeat;
+    background-size: cover;
+}
+#sliderWrapper h1{
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 37px;
+}
+#sliderWrapper .slide-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+#sliderWrapper .slide-block .img-container {
+    background-color: #fff;
+    padding: 5px;
+}
+.img-container .slide-img{
+    height: 100%;
+    background: no-repeat center center;
+    background-size: cover;
+}
+/***/ /*--SLIDER STYLES START--*/ /***/
+/***/
+/***/
+/***/
+
+#sliderWrapper .slider {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+}
+.slider .arrow {
+    background: no-repeat center center;
+    transition: 0.25s;
+}
+.slider .arrow:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.slider .left-arrow {
+    background-image: url("../img/leftarrow.png"); /*chngbl*/
+}
+.slider .right-arrow {
+    background-image: url("../img/rightarrow.png"); /*chngbl*/
+}
+.slider-container {
+    overflow: hidden;
+    height: 435px; /*chngbl*/
+    position: relative;
+}
+.slider-container .slide-block {
+    height: 435px; /*chngbl*/
+    width: 100%;
+    position: absolute;
+}
+/***/
+/***/
+/***/
+/***/ /*--SLIDER STYLES END--*/ /***/
+#deliveryHeader {
+    padding: 35px 0;
+}
+#deliveryHeader h3 {
+    font-size: 20px;
+    color: #86bc56;
+    text-align: center;
+    font-weight: normal;
+    width: 628px;
+    margin: 0 auto;
+}
+#deliveryBody {
+    background-image: url("../img/deliverybg.jpg");
+    background-size: cover;
+}
+#cities {
+    border-left: 8px solid #ec3924;
+    padding-left: 6px;
+    position: relative;
+    top: 40px;
+}
+#cities p {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#deliveryContent .img-container {
+    text-align: center;
+}
+
+#partnersWrapper {
+    text-align: center;
+}
+#partnersGrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+#partnersWrapper h1 {
+    margin: 50px 0;
+}
+
+#aboutWrapper {
+    background-color: #86bc56;
+    height: 388px;
+    margin-top: 50px;
+    padding-top: 20px;
+    margin-bottom: 80px;
+}
+
+#aboutCard {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+    width: 933px;
+    padding: 13px;
+}
+#aboutCard .left-side {
+    float: left;
+}
+#aboutCard .right-side {
+    padding-left: 302px;
+}
+#aboutCard h2 {
+    font-size: 18px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+#aboutText {
+    font-size: 16px;
+    font-style: italic;
+}
+#byLine {
+    font-style: italic;
+    margin-top: 23px;
+    color: #ff4c38;
+    border-left: 4px solid #ff4c38;
+    font-family: Arial;
+    padding-left: 13px;
+}
+#contactsContent {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    grid-gap: 34px;
+
+}
+#contactsInfo {
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.25);
+}
+#contactsInfo h1 {
+    color: #fff;
+    background-color: #86bc56;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 23px;
+}
+#contactNumber, #contactEmail,
+#companyName, #contactAddress {
+    margin: 5px 0;
+}
+#companyName {
+    color: #86bc56;
+    font-size: 24px;
+    padding: 0 23px;
+}
+#contactAddress {
+    padding: 0 23px;
+    font-size: 19px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#contactNumber, #contactEmail {
+    font-size: 19px;
+    padding: 0 23px;
+    font-weight: bold;
+}
+#contactEmail {
+    padding-bottom: 15px;
+}
+
+footer {
+    margin-top: 35px;
+    color: white;
+    padding: 15px 0;
+    background-color: #86bc56;
+}
+#footerContent #logoBlock img{
+    /*position: relative;*/
+    /*left: -20px;*/
+}
+#footerContent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#footerContent .contact img{
+    float: left;
+    position: relative;
+    left: 90px;
+}
+#footerContent div p{
+    font-size: 19px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+#footerContent .number {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+}
+#footerContent a .mail{
+    font-size: 15px;
+    color: white;
+    text-align: right;
+    text-transform: uppercase;
+}
+#footerContent a {
+    text-decoration: none;
+}
